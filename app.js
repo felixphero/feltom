@@ -8,6 +8,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var about = require("./routes/about");
 var history = require("./routes/history");
+var port = 8080;
 
 var app = express();
 
@@ -40,6 +41,10 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render("error");
+});
+
+app.listen(process.env.PORT || port, function() {
+  console.log("server up");
 });
 
 module.exports = app;
