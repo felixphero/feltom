@@ -6,12 +6,9 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-var about = require("./routes/about");
-var history = require("./routes/history");
-var economics = require("./routes/economics");
-var politics = require("./routes/politics");
-var science = require("./routes/science");
-var philosophy = require("./routes/philosophy");
+
+// var history = require("./routes/history");
+
 var port = 8080;
 
 var app = express();
@@ -28,12 +25,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/about", about);
-app.use("/history", history);
-app.use("/economics", economics);
-app.use("/politics", politics);
-app.use("/science", science);
-app.use("/philosophy", philosophy);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

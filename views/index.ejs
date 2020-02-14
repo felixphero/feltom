@@ -1,4 +1,48 @@
-<%- include ('partials/header') %>
-
-<h2>Hello world</h2>
-<%- include ('partials/footer') %>
+<%- include ('partials/header') %> <% if(title==="history"){%> <%- include
+('history') %> <%}else if(title==="philosophy"){%> <%- include ('philosophy') %>
+<%}else if(title==="econopolitics"){%> <%- include ('econopolitics') %> <%}else
+if(title==="georgism"){%> <%- include ('georgism') %> <%}else
+if(title==="language-ed"){%> <%- include ('language-ed') %> <%}else
+if(title==="money-finance"){%> <%- include ('money-finance') %> <%}else
+if(title==="photos"){%> <%- include ('photos') %> <%}else
+if(title==="religion"){%> <%- include ('religion') %> <%}else
+if(title==="about"){%> <%- include ('about') %> <%}else // history
+if(title==="dictatorship"){%> <%- include
+('partials/articles/history/dictatorship') %> <%}else if(title==="land"){%> <%-
+include ('partials/articles/history/land_quiz') %> <%}else //
+//language-ed/////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(title==="teacher-education"){%> <%- include
+('partials/articles/language-ed/teacher-education') %> <%}else
+if(title==="university"){%> <%- include
+('partials/articles/language-ed/university') %> <%}else //
+//philosophy/////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(title==="confusions-of-man"){%> <%- include
+('partials/articles/philosophy/confusions_of_man') %> <%}else
+if(title==="lack-of-money"){%> <%- include
+('partials/articles/philosophy/lack_of_money') %> <%}else
+if(title==="philosofia"){%> <%- include
+('partials/articles/philosophy/philosofia') %> <%}else
+if(title==="three-more-confusion"){%> <%- include
+('partials/articles/philosophy/Three_more_') %> <%}else //
+//religion/////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(title==="africa-and-faith"){%> <%- include
+('partials/articles/religion/africa_and_faith') %> <%}else
+if(title==="anglican-vs-catholic"){%> <%- include
+('partials/articles/religion/anglican_vs_catholic') %> <%}else
+if(title==="catholic-education"){%> <%- include
+('partials/articles/religion/catholic_education') %> <%}else //
+//sciencehealth/////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(title==="food"){%> <%- include ('partials/articles/sciencehealth/food') %>
+<%}else if(title==="gm_food"){%> <%- include
+('partials/articles/sciencehealth/gm_food') %> <%}else //
+//econopolitics/////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(title==="taxation"){%> <%- include
+('partials/articles/econopolitics/taxation') %> <%}else
+if(title==="negotiating-loans"){%> <%- include
+('partials/articles/econopolitics/negotiating_loans') %> <%}else
+if(title==="difficult-money"){%> <%- include
+('partials/articles/econopolitics/difficult_money') %> <%}else
+if(title==="banks"){%> <%- include
+('partials/articles/econopolitics/banks_necessary') %> <%}else
+if(title==="knowledge"){%> <%- include ('partials/articles/history/land_quiz')
+%> <%}%> <%- include('partials/footer') %>

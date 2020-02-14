@@ -126,3 +126,29 @@
   visibility: hidden;
   z-index: 9999;
 }
+
+.caption {
+  text-align: justify;
+  background: rgb(255, 254, 254);
+}
+.date {
+  color: grey;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.singleDoerName {
+  background: greenyellow;
+  color: black;
+}
+
+.viewPkg {
+  background: greenyellow;
+  color: black;
+}
+.bdPkgsTxt {
+  /* background: greenyellow;
+  color: black; */
+}
+.headerFeaturedCategory {
+  color: grey !important;
+}
