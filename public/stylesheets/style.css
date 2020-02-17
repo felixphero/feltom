@@ -142,13 +142,38 @@
 }
 
 .viewPkg {
+  background: greenyellow !important;
+  color: black !important;
+}
+.bdPkgsTxt:hover {
+  background: greenyellow !important;
+  color: black !important;
+}
+
+.boruso {
+  float: left;
+  padding-right: 2rem;
+}
+
+.bdPkgs:hover {
   background: greenyellow;
   color: black;
 }
-.bdPkgsTxt {
-  /* background: greenyellow;
-  color: black; */
+.singleVideoCategory {
+  background: greenyellow;
+}
+.blogTitle {
+  text-transform: capitalize !important;
 }
 .headerFeaturedCategory {
-  color: grey !important;
+  text-transform: capitalize !important;
+}
+.rpwe-title {
+  text-transform: capitalize !important;
+}
+.wpp-post-title {
+  text-transform: capitalize !important;
+}
+.relatedPostTitle {
+  text-transform: capitalize !important;
 }
