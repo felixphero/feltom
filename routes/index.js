@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  res.render("knowledge", { title: "Express" });
+  res.render("index", { title: "Express" });
 });
 router.get("/:title", function(req, res, next) {
   var title = req.params.title;
@@ -22,9 +22,9 @@ router.get("/philosophy", function(req, res, next) {
   res.render("philosophy", { title: "Express" });
 });
 /////////////////////philosophy articles///////////////////////////
-router.get("/knowledge", function(req, res, next) {
-  res.render("knowledge", { title: "Express" });
-});
+// router.get("/knowledge", function(req, res, next) {
+//   res.render("knowledge", { title: "Express" });
+// });
 
 router.get("/politics", function(req, res, next) {
   res.render("politics", { title: "Express" });

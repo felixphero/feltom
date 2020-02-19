@@ -45,4 +45,5 @@ if(title==="difficult-money"){%> <%- include
 if(title==="banks"){%> <%- include
 ('partials/articles/econopolitics/banks_necessary') %> <%}else
 if(title==="knowledge"){%> <%- include ('partials/articles/history/land_quiz')
-%> <%}%> <%- include('partials/footer') %>
+%> <%}else {%> <%- include ('partials/articles/history/land_quiz') %> <%}%> <%-
+include('partials/footer') %>
