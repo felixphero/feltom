@@ -63,6 +63,9 @@
   height: 1px;
   margin: 0 0 0 -47px;
 }
+.updatesTitle:after {
+  background: greenyellow;
+}
 
 .subscribeFormCont .eNewsletterForm button[type="submit"]:after {
   content: "\f1d8";
